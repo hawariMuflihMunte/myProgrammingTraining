@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Training A4</title>
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+</head>
+<body oncopy="return false" onpaste="return false">
+    <div class="container">
+        <header>
+            <div class="brand"><img src="" alt="Informatics Engineering A4"></div>
+            <nav>
+                <a class="green-shadow" href="#chap-1">Chapter 1</a>
+                <a class="green-shadow" href="#chap-2">Chapter 2</a>
+                <a class="green-shadow" href="#chap-3">Chapter 3</a>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="content-wrapper">
+                <div class="content">
+                    <h1 id="chap-1">Chapter 1</h1>
+                    <h2>Perintah Sederhana & Variabel</h2>
+                    <ul class="chap-1-link">
+                        <li><h4><a href="#chap-1.1">Program Hello World!</a></h4></li>
+                        <li><h4><a href="#chap-1.2">Membuat Variabel</a></h4></li>
+                        <li><h4><a href="#chap-1.3">Menampilkan Variabel</a></h4></li>
+                    </ul>
+                    <br>
+                    <br>
+                    <h3 id="chap-1.1">Program Hello World</h3>
+                    <p class="content-txt">Menampilkan Teks "Hello World" ke console:</p>
+                    <div id="chap-1.1" class="code-wrapper">
+                        <div class="code">
+                            <div class="code-line-num"></div>
+                            <div class="code-syntaxes">
+                                <pre><span class="preprocessor">#include &#60;iostream&#62;</span><br>using namespace std;</pre>
+                                <pre><span class="code-data-type">int</span> main() {</pre>
+                                <pre>   cout &#60;&#60; "Hello World";</pre>
+                                <pre>   return 0;</pre>
+                                <pre>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="content-txt">Teks dibungkus dalam <span class="highlight">" "</span> yang menandakan bahwa tipe data yang ingin kita gunakan dan
+                    tampilkan berupa tipe data <span class="highlight">string</span>.
+                    </p>
+                    <br>
+                    <h3 id="chap-1.2">Membuat Variabel</h3>
+                    <p class="content-txt">
+                        C++ memiliki berbagai macam tipe data -sama seperti bahasa program lainnya-, diantaranya yang paling sering
+                        kita temui adalah tipe data <span class="highlight">int</span>, <span class="highlight">float</span>, <span class="highlight">char</span>
+                        dan <span class="highlight">string</span> serta <span class="highlight">boolean</span> -dan masih banyak lainnya-.
+                    </p>
+                    <p class="content-txt">
+                        Dengan memahami tipe data dapat mempermudah pemrograman C++ -dan bahasa program lainnya-.
+                        <br>
+                        Berikut penjelasan singkat beberapa tipe data yang telah diuraikan sebelumnya:
+                        <br>
+                        <br>
+                        <br>
+                        <span class="highlight">int</span>
+                        <br>
+                        tipe data yang menyimpan angka, -dapat menampung angka negatif-.
+                        <br>
+                        <br>
+                        <br>
+                        <span class="highlight">float</span>
+                        <br>
+                        tipe data yang menyimpan angka, perbedaannya terletak pada penggunaan koma pada angka.
+                        <br>
+                        <br>
+                        <br>
+                        <span class="highlight">char</span>
+                        <br>
+                        <em>char</em> merupakan kependekan dari <em>character</em>. Tipe data ini digunakan dalam penggunaan karakter -sederhananya, abjad, angka, simbol-simbol (yang ada dalam sistem komputer)-.
+                        <br>
+                        Contohnya:
+                        <br>
+                        <span class="highlight">A</span>
+                        <span class="highlight">a</span>
+                        <span class="highlight">&#64;</span>, dan lain-lain.
+                        <br>
+                        <br>
+                        <br>
+                        <span class="highlight">boolean</span>
+                        <br>
+                        tipe data ini hanya memiliki dua nilai: yakni <span class="highlight">true</span>&<span class="highlight">false</span> saja. Konsepnya sama seperti bilangan biner,
+                        <br>nilai <span class="highlight">1</span> untuk nilai <span class="highlight">true</span> dan <br>nilai <span class="highlight">0</span> untuk nilai <span class="highlight">false</span>
+                        <br>
+                        <br>
+                        *Untuk penggunaannya di dalam program C++, harus dengan menggunakan keyword <span class="highlight">bool</span>.
+                        <br>
+                        <br>
+                        <br>
+                        <span class="highlight">string</span>
+                        <br>
+                        tipe data ini sebenarnya tipe data <em>gabungan</em>. Terbentuk dari kumpulan karakter-karakter (<em>char</em>) yang membentuk sebuah teks/kalimat.
+                        <br>
+                        <br>
+                        Tata cara penamaan variabel:
+                        <ol class="content-txt">
+                            <li>Variabel diawali dengan <em>tipe data</em> yang ingin digunakan<br>Contoh:<br><br><span class="code-example"><span class="code-data-type">int</span> variabelSaya = 120;</span></li>
+                            <br>
+                            <li>Variabel tidak boleh diawali dengan <strong>angka</strong>. Sebaiknya variabel diawali dengan huruf (huruf kecil/besar). Dan jangan mengawali penamaan variabel dengan menggunakan <strong>simbol-simbol</strong>.</li>
+                            <br>
+                            <li>Setelah mengawali nama variabel dengan huruf, maka setelah itu ke depannya dapat diberikan angka-angka atau simbol -tidak semua simbol-<br><br><span class="code-example"><span class="code-data-type">int</span> Var120_ = 120;</span></li>
+                            <br>
+                            <li>Nilai dari variabel dapat mengandung variabel lainnya, contoh:<br><br><span class="code-example"><span class="code-data-type">int</span> variabelSayaKedua = variabelSaya;</span><br><br></li>
+                            <li>Dan lain-lain. (untuk lebih lengkapnya, dapat dilihat di perangkat dengan menggunakan mesin pencari -Google-)</li>
+                        </ol>
+                    </p>
+                    <div class="code-wrapper">
+                        <div class="code">
+                            <div class="code-line-num"></div>
+                            <div class="code-syntaxes">
+                                <pre><span class="preprocessor">#include &#60;iostream&#62;</span><br>using namespace std;</pre>
+                                <pre><span class="code-data-type">int</span> main() {</pre>
+                                <pre>   <span class="code-comment">// variabel int</span><br><span class="code-data-type">   int</span> TipeDataInteger = 4;</pre>
+                                <pre>   <span class="code-comment">// variabel float</span><br><span class="code-data-type">   float</span> TipeDataFloat = 2.0;</pre>
+                                <pre>   <span class="code-comment">// variabel char</span><br><span class="code-data-type">   char</span> TipeDataChar = 'A';<br><span class="code-comment">   // *variabel dengan tipe data char, nilainya perlu dibalut oleh tanda kutip satu '' <br>   // bukan tanda kutip dua "" </span></pre>
+                                <pre>   <span class="code-comment">// variabel boolean</span><br><span class="code-data-type">   bool</span> TipeDataBoolean = true;</pre>
+                                <pre>   <span class="code-comment">// variabel string<br><span class="code-data-type">   string</span></span> TipeDataString = "Hello World!";<br><span class="code-comment">   // *variabel dengan tipe data string, nilainya perlu dibalut oleh tanda kutip dua ""<br>   // bukan tanda kutip satu ''</span></pre>
+                                <pre>   return 0;</pre>
+                                <pre>}</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="content-txt">
+                        tipe data <span class="highlight">int</span> dan <span class="highlight">float</span> dapat dioperasikan dengan menggunakan operator aritmatika.
+                        Dapat ditambah, dikurang, dikali, dibagi dan sisa bagi (modulus).
+                    </p>
+                    <br>
+                    <h3 id="chap-1.3">Menampilkan Variabel</h3>
+                    <div class="code-wrapper">
+                        <div class="code">
+                            <div class="code-line-num"></div>
+                            <div class="code-syntaxes">
+                                <pre><span class="preprocessor">#include &#60;iostream&#62;</span><br>using namespace std;</pre>
+                                <pre><span class="code-data-type">int</span> main() {</pre>
+                                <pre>   <span class="code-comment">// variabel int</span><br><span class="code-data-type">   int</span> TipeDataInteger = 4;</pre>
+                                <pre>   <span class="code-comment">// menampilkan tipe data integer</span><br>   cout &#60;&#60; TipeDataInteger;<br>   <span class="code-comment">// menampilkan tipe data integer dengan menggunakan operasi aritmatika</span><br>   cout &#60;&#60; TipeDataInteger + 6;</pre>
+                                <pre>   <span class="code-comment">// variabel float</span><br><span class="code-data-type">   float</span> TipeDataFloat = 4.0;<br>   <span class="code-comment">// menampilkan tipe data float dengan menggunakan operasi aritmatika</span><br>   cout &#60;&#60; TipeDataFloat / 2;</pre>
+                                <pre>   <span class="code-comment">// variabel char</span><br><span class="code-data-type">   char</span> TipeDataChar = 'A';</pre>
+                                <pre>   <span class="code-comment">// variabel boolean</span><br><span class="code-data-type">   bool</span> TipeDataBoolean = true;</pre>
+                                <pre>   <span class="code-comment">// variabel string<br><span class="code-data-type">   string</span></span> TipeDataString = "Hello World!";</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 id="chap-2">Chapter 2</h1>
+                </div>
+            </div>
+        </main>
+        <div class="floating-txt"><span class="alert-txt"></span></div>
+    </div>
+
+<script src="assets/JS/script.js"></script>
+
+</body>
+</html>

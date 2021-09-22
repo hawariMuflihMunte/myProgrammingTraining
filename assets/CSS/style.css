@@ -1,0 +1,213 @@
+/* import font */
+@font-face
+{
+    src: url(assets/etc/font/Outage.ttf);
+    font-family: "Outage";
+}
+
+/* do not disturb! */
+/* jangan ganggu! */
+
+.floating-txt
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    background: rgba(0,255,0,0.67);
+    border-radius: 12px;
+    transition: 0.8s linear;
+    animation: blinking-bg 4s 2s alternate infinite;
+}
+
+@keyframes blinking-bg
+{
+    0%
+    {
+        background: rgba(0,255,0,0.67);
+        border-radius: 12px;
+    }
+    100%
+    {
+        background: rgba(0,255,0,0.47);
+        border-radius: 4px;
+    }
+}
+
+/* do not disturb! */
+/* jangan ganggu! */
+
+/* master style */
+*, *::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+html, body
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Outage", fantasy;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* texts special styling */
+span.highlight
+{
+    background-color: black;
+    color: white;
+    padding: 1.5px;
+}
+
+span.code-comment
+{
+    color: gray;
+}
+
+span.code-data-type
+{
+    color: orangered;
+    font-style: italic;
+}
+
+span.preprocessor
+{
+    color: lightseagreen;
+}
+
+span.code-example
+{
+    padding: 2px;
+    background: rgba(0,0,0,0.89);
+    color: seashell;
+}
+
+/* header, nav, .brand style */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    background: rgba(0,0,0,0.95);
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.brand
+{
+    align-self: center;
+    margin: 4px;
+    color: blanchedalmond;
+}
+
+nav
+{
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a
+{
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+    background: rgba(0,255,0,0.67);
+    border-radius: 12px 2px;
+    color: #000;
+}
+
+.green-shadow
+{
+    box-shadow:
+        0 -1.85px 3.45px lightgreen,
+        0 1.85px 3.45px lightgreen,
+        -1.65px 0 3.45px lightgreen,
+        1.65px 0 3.45px lightgreen
+    ;
+}
+
+/* content styling */
+main
+{
+    margin-top: 60px;
+    padding: 16px;
+    background: rgba(0,0,0,0.89);
+}
+
+.content
+{
+    padding: 8px;
+    background: aliceblue;
+}
+
+/* special */
+/* code-wrapper, code, code-line-num, code-syntaxes */
+.code-wrapper
+{
+    /* padding: 8px; */
+    background: antiquewhite;
+    box-shadow:
+        1px 0.5px 1.75px grey,
+        1px 1px 1.75px grey
+    ;
+    width: max-content;
+}
+
+.code
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.code-line-num
+{
+    background: lightblue;
+    padding: 6.5px;
+}
+
+.code-syntaxes
+{
+    background: rgba(0,0,0,0.89);
+    color: azure;
+    padding: 8px;
+}
+
+.content-txt
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.85px;
+    font-size: large;
+}
+
+h4 a
+{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s linear;
+}
+
+h4 a:hover
+{
+    color: cadetblue;
+}
+
+h4 a:active
+{
+    color: cadetblue;
+}
