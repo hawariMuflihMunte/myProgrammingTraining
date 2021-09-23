@@ -114,6 +114,15 @@ header
     color: blanchedalmond;
 }
 
+.brand-img
+{
+    border-radius: 50%;
+    width: 40px;
+    box-shadow:
+        0 0 8px 2.45px rgba(0,255,0,0.67)
+    ;
+}
+
 nav
 {
     align-self: center;

@@ -12,7 +12,7 @@
 <body oncopy="return false" onpaste="return false">
     <div class="container">
         <header>
-            <div class="brand"><img src="" alt="Informatics Engineering A4"></div>
+            <div class="brand"><img class="brand-img" src="assets/etc/img/TIFA4.jpg" alt="Informatics Engineering A4"></div>
             <nav>
                 <a class="green-shadow" href="#chap-1">Chapter 1</a>
                 <a class="green-shadow" href="#chap-2">Chapter 2</a>
@@ -165,9 +165,19 @@
                             <div class="code-syntaxes">
                                 <pre><span class="preprocessor">#include &#60;iostream&#62;</span><br>using namespace std;</pre>
                                 <pre><span class="code-data-type">int</span> main() {</pre>
+                                <pre>    <span class="code-comment">// integer</span><br>    cout &#60;&#60; 10 + 10 &#60;&#60; endl;</pre>
+                                <pre>    <span class="code-comment">// string</span><br>    cout &#60;&#60; "10 + 10" &#60;&#60; endl;</pre>
+                                <pre>    return 0;</pre>
+                                <pre>}</pre>
                             </div>
                         </div>
                     </div>
+                    <p class="content-txt">
+                        Perbedaannya terletak pada penampilan tipe data diatas!<br>
+                        @ tipe data <em>integer</em> menampilkan angka <span class="code-example">20</span>, sedangkan<br>
+                        @ tipe data <em>string</em> menampilkan <span class="code-example">10 + 10</span> -terbukti tipe data <em>string</em> tidak melakukan operasi aritmatika <span class="code-example">() * / + - %</span>
+                        melainkan menampilkan apa yang tertulis pada nilainya sendiri.
+                    </p>
                     <h1 id="chap-2">Chapter 2</h1>
                 </div>
             </div>
